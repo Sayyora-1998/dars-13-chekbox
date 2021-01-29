@@ -1,0 +1,82 @@
+body{
+	background-color: #FB205444;
+
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+h2{
+	color:yellow;
+	font-size:20px;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+
+}
+.forma{
+	background-color:#FB00FF;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 6px;
+
+
+
+}
+.controller{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	border: 1px solid black;
+	background-size: cover;
+	background-position: center;
+	margin-right: 6px;
+
+	
+}
+input:checked +  .basketball {
+	background-image: url(img/basketball.svg);
+	
+
+}
+input:checked + .swimming {
+	background-image: url(img/swimming.svg);
+}
+input:checked + .tennis{
+	background-image:url(img/table-tennis.svg);
+}
+input:checked + .voleyball {
+	background-image: url(img/volleyball.svg);
+}
+input:disabled + .controller {
+
+	opacity: 0.5;
+}
+input:focus + .controller {
+	box-shadow: 0px 1px 1px 4px yellow;
+	
+
+
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.ds{
+	display: flex;
+	align-items: center;
+	margin: 8px;
+}
